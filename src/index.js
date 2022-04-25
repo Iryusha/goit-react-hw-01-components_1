@@ -1,3 +1,21 @@
+import React, { Children } from "react";
+// import ReactDOM  from 'react-dom/client';
+import ReactDOM from "react-dom";
+
+const element = React.createElement("div", {
+  a: 5,
+  b: 10,
+  children: "Привет мир",
+});
+
+console.log(element);
+
+ReactDOM.render(element, document.querySelector("#root"));
+//   <React.StrictMode>
+//     <App />
+//   </React.StrictMode>
+// );
+
 // import React from 'react';
 // import ReactDOM from 'react-dom/client';
 // import './index.css';
