@@ -1,4 +1,4 @@
-import style from "./Profile.modul.css";
+import style from "./Profile.module.css";
 import PropTypes from "prop-types";
 
 export default function Profile({ username, tag, location, avatar, stats }) {
