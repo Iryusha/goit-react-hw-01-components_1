@@ -8,11 +8,11 @@ p {
   width: 300px;
   background: linear-gradient(
     135deg,
-    rgba(164, 164, 197, 1) 0%,
-    rgba(72, 77, 115, 1) 49%,
-    rgba(27, 27, 50, 1) 100%
+    rgb(167, 197, 164) 0%,
+    rgb(48, 118, 57) 49%,
+    rgb(8, 36, 12) 100%
   );
-  border-radius: 10px;
+  /* border-radius: 10px; */
   color: #fff;
 }
 
@@ -25,26 +25,28 @@ p {
 
 .avatar {
   margin-top: 20px;
-  width: 150px;
-  border-radius: 50%;
+  width: 100px;
+  /* border-radius: 50%; */
 }
 
 .name {
+  color: blue;
   margin-top: 10px;
   font-size: 30px;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 .tag,
 .location {
   margin-top: 10px;
   font-size: 20px;
+  color: blue;
 }
 
 .stats {
   padding-left: 10px;
-  margin-top: 40px;
-  margin-bottom: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   display: flex;
   justify-content: center;
   list-style: none;
@@ -55,14 +57,14 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: rgb(170, 210, 251);
+  color: rgb(170, 251, 251);
 }
 
-.label {
+/* .label {
   font-weight: bold;
-}
+} */
 
 .quantity {
-  font-size: 12px;
+  font-size: 17px;
   color: #fff;
 }
