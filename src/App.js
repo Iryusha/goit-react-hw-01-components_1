@@ -1,6 +1,8 @@
 import Container from "./components/containers/container";
 import Profile from "./components/social-profile/profile";
 import user from "./data/user.json";
+import Statistics from "./components/statistics/statistics";
+import data from "./data/data.json";
 
 export default function App() {
   return (
@@ -12,11 +14,10 @@ export default function App() {
         avatar={user.avatar}
         stats={user.stats}
       />
-
-      {/* <Statistics title="Upload stats" stats={data} />
+      <Statistics title="Upload stats" stats={data} />
       <Statistics stats={data} />
-      <FriendList friends={friends} />
-      <TransactionHistory items={transactions} /> */}
+      {/* <FriendList friends={friends} /> */}
+      {/* <TransactionHistory items={transactions} /> */}
     </Container>
   );
 }
