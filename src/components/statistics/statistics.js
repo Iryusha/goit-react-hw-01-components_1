@@ -3,17 +3,20 @@ import style from "../statistics/statistics.module.css";
 
 export default function Statistics({ title, stats }) {
   const renderTitle = title ? (
-    <h2 className={style.title}> Upload status</h2>
+    <h2 className={style.title}>Upload stats</h2>
   ) : (
     ""
   );
-
   return (
     <section className={style.statistics}>
       {renderTitle}
-      <ul className={style.stats_list}>
+      <ul className={style.stat__list}>
         {stats.map(({ id, label, percentage }) => (
-          <li className={style.item} key={id}>
+          <li
+            className={style.item}
+            key={id}
+            // style={{ backgroundColor: randColor() }}
+          >
             <span className="label">{label}</span>
             <span className="percentage">{percentage}</span>
           </li>
@@ -24,8 +27,7 @@ export default function Statistics({ title, stats }) {
 }
 
 Statistics.propTypes = {
-  title: PropTypes.string.isRequired,
-
+  // title: PropTypes.string.isRequired,
   stats: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
@@ -34,3 +36,10 @@ Statistics.propTypes = {
     })
   ),
 };
+
+// function randColor() {
+//   let r = Math.floor(Math.random() * 256);
+//   let g = Math.floor(Math.random() * 256);
+//   let b = Math.floor(Math.random() * 256);
+//   return 'rgba(' + r + ',' + g + ',' + b + ',0.8)';
+// }

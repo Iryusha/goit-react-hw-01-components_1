@@ -2,7 +2,7 @@
   padding: 20px;
   margin-top: 40px;
   border-radius: 10px;
-  background: rgb(136, 73, 134);
+  background: rgba(44, 83, 100, 1) 100%;
 }
 
 .title {
@@ -11,7 +11,7 @@
   color: rgb(191, 235, 220);
 }
 
-.stats__list {
+.stat__list {
   display: flex;
 }
 
@@ -23,8 +23,9 @@
   height: 50px;
   border-radius: 10px;
   box-shadow: 0px 0px 1px 0px #fff;
+  background-color: blueviolet;
 }
 
-/* .item:not(:last-child) {
-    margin-right: 10px;
-} */
+.item:not(:last-child) {
+  margin-right: 10px;
+}
